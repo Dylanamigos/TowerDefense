@@ -13,10 +13,9 @@ public class Movimiento : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("space"))
-        {
-            gameObject.transform.Translate(10f * Time.deltaTime, 0, 0);
-        }
+
+            gameObject.transform.Translate(-10f * Time.deltaTime, 0, 0);
+        
     
     }
 }
