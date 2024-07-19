@@ -6,7 +6,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject prefab;
-    private Vector3 spawnPosition = new Vector3(0, 0, 0);
+    private Vector3 spawnPosition;
     private double tiempo = 0f;
     private double tiempoaparicion = 3f;
     private Quaternion spawnRotation = Quaternion.identity;
