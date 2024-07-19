@@ -820,6 +820,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 5442419898851306818, guid: 3c7f9b336e6808a44ba92a7b17872496, type: 3}
   Posicion: 0
+  tiemposoles: 0
+  Sol: {fileID: 7801467869702561870, guid: 9d3b277328e3b52478d02f05a027b012, type: 3}
 --- !u!212 &2026839434
 SpriteRenderer:
   m_ObjectHideFlags: 0

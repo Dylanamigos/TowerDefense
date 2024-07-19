@@ -15,12 +15,16 @@ public class SpawnerBalas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Disparar();
+
+    }
+    void Disparar()
+    {
         tiempo += Time.deltaTime;
         if (tiempo >= 1.37)
         {
             tiempo = 0f;
             Instantiate(prefab, gameObject.transform.position, Quaternion.identity);
         }
-
     }
 }
