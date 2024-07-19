@@ -14,7 +14,7 @@ public class Movimiento : MonoBehaviour
     void Update()
     {
 
-            gameObject.transform.Translate(-10f * Time.deltaTime, 0, 0);
+            gameObject.transform.Translate(-1f * Time.deltaTime, 0, 0);
         
     
     }
