@@ -16,7 +16,7 @@ public class SpawnerBalas : MonoBehaviour
     void Update()
     {
         tiempo += Time.deltaTime;
-        if (tiempo >= 5f)
+        if (tiempo >= 1.37)
         {
             tiempo = 0f;
             Instantiate(prefab, gameObject.transform.position, Quaternion.identity);
