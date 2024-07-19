@@ -15,6 +15,7 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         tiempoaparicion = Random.Range(1f, 4f);
+        spawnPosition = new Vector3(11f, Random.Range(-4f, 4f), 0);
     }
 
     // Update is called once per frame
@@ -28,6 +29,7 @@ public class Spawner : MonoBehaviour
             Instantiate(prefab, spawnPosition, spawnRotation);
             tiempo = 0f;
             tiempoaparicion = Random.Range(1f, 4f);
+            spawnPosition = new Vector3(11f, Random.Range(-4f, 4f), 0);
         }
     }
 }
