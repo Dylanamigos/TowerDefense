@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class Sol : MonoBehaviour
 {
+    enum SolSpawneadoPor
+    {
+        cielo,
+        girasol,
+        girasol_doble,
+        hongo,
+    }
     Vector3 PosicionCaida;
     // Start is called before the first frame update
     void Start()
