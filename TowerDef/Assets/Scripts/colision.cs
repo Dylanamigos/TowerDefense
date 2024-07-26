@@ -18,7 +18,7 @@ public class colision : MonoBehaviour
     {
        
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    /*void OnColliderEnter2D(Collision2D collision)
     {
 
         if (collision.collider.CompareTag("enemy"))
@@ -32,6 +32,19 @@ public class colision : MonoBehaviour
             }
 
             
+            Destroy(gameObject);
+        }
+    }*/
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("enemy"))
+        {
+            enemigo enemigo = collision.GetComponent<enemigo>();
+            if (enemigo != null)
+            {
+                enemigo.TakeDamage(damage);
+            }
+
             Destroy(gameObject);
         }
     }
