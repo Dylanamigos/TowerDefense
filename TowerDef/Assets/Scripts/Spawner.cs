@@ -13,6 +13,7 @@ public class Spawner : MonoBehaviour
     public int Posicion;
     public double tiemposoles = 0f;
     public GameObject Sol;
+    public GameObject zombiecono;
 
     // Start is called before the first frame update
 
@@ -41,6 +42,7 @@ public class Spawner : MonoBehaviour
     {
         SpawnerZombies();
         SpawnearSoles();
+        SpawnerZombiescono();
     }
     void SpawnearSoles()
     {
@@ -52,5 +54,18 @@ public class Spawner : MonoBehaviour
             tiemposoles = 0f;
         }
 
+    }
+    void SpawnerZombiescono()
+    {
+        tiempo += Time.deltaTime;
+
+        if (tiempo >= tiempoaparicion)
+        {
+            Instantiate(zombiecono, spawnPosition, spawnRotation);
+            tiempo = 0f;
+            tiempoaparicion = Random.Range(4f, 10f);
+            Posicion = Random.Range(0, 5);
+            spawnPosition = new Vector3(16.5f, 9.891f - (Posicion * 4.396f), 0);
+        }
     }
 }
